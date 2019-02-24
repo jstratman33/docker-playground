@@ -6,3 +6,10 @@ services:
     build:
       context: .
       dockerfile: DockerPlayground/Dockerfile
+  db:
+    image: "mcr.microsoft.com/mssql/server"
+    environment:
+      SA_PASSWORD: "0F@0PK#rtwkSxjpGl2Wf"
+      ACCEPT_EULA: "Y"
+    ports:
+      - "1433:1433"
