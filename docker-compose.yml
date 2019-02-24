@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  dockerplayground:
+    image: ${DOCKER_REGISTRY-}dockerplayground
+    build:
+      context: .
+      dockerfile: DockerPlayground/Dockerfile
